@@ -1,0 +1,16 @@
+.root {
+    margin-bottom: 32px;
+}
+
+.field {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.field fieldset {
+
+}
+
+.btn {
+    width: 100%;
+}
