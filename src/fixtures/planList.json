@@ -317,5 +317,49 @@
     "kmOver": 0.39,
     "timeOver": 0.3,
     "id": "1a0a1c40-f632-11eb-95f3-c1910d7fbb84"
+  },
+  {
+    "vendor": "Hello",
+    "tariff": "минуты",
+    "car": "Skoda Karoq/VW Tiguan",
+    "prepay": "",
+    "kmInc": "",
+    "timeInc": "",
+    "kmOver": "",
+    "timeOver": 0.51,
+    "id": "8cdb9af0-f6c3-11eb-a320-b53c86354caa"
+  },
+  {
+    "vendor": "Hello",
+    "tariff": "1 сутки",
+    "car": "Skoda Karoq/VW Tiguan",
+    "prepay": 79,
+    "kmInc": "",
+    "timeInc": 1440,
+    "kmOver": 0.39,
+    "timeOver": "",
+    "id": "ad497460-f6c3-11eb-a320-b53c86354caa"
+  },
+  {
+    "vendor": "Hello",
+    "tariff": "2 суток",
+    "car": "Skoda Karoq/VW Tiguan",
+    "prepay": 153,
+    "kmInc": "",
+    "timeInc": 2880,
+    "kmOver": 0.39,
+    "timeOver": "",
+    "id": "bd713260-f6c3-11eb-a320-b53c86354caa"
+  },
+  {
+    "vendor": "Hello",
+    "tariff": "3 суток",
+    "car": "Skoda Karoq/VW Tiguan",
+    "prepay": 225,
+    "kmInc": "",
+    "timeInc": 4320,
+    "kmOver": 0.39,
+    "timeOver": "",
+    "id": "c8c59660-f6c3-11eb-a320-b53c86354caa"
   }
 ]

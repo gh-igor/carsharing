@@ -76,7 +76,12 @@ export default function ResultList({ km, min }) {
       const timeResult = timeRest > 0 ? timeRest * Number(plan.timeOver) : 0;
 
       return { ...plan, summary: Number(plan.prepay) + kmResult + timeResult };
-    }).filter(plan => plan.timeInc >= min || !plan.timeInc).sort((a, b) => a.summary - b.summary);
+    }).filter(plan => {
+      if (plan.timeInc < min && plan.timeOver) {
+        return true;
+      }
+      return plan.timeInc >= min || !plan.timeInc;
+    }).sort((a, b) => a.summary - b.summary);
   }, [km, min, planList]);
 
   return (
