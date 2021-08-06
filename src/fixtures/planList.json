@@ -200,7 +200,7 @@
   {
     "vendor": "Везуха",
     "tariff": "минуты и км",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": "",
     "kmInc": "",
     "timeInc": "",
@@ -211,7 +211,7 @@
   {
     "vendor": "Везуха",
     "tariff": "70 минут",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": 12.9,
     "kmInc": 20,
     "timeInc": 70,
@@ -222,7 +222,7 @@
   {
     "vendor": "Везуха",
     "tariff": "3 часа",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": 23.9,
     "kmInc": 40,
     "timeInc": 180,
@@ -233,7 +233,7 @@
   {
     "vendor": "Везуха",
     "tariff": "6 часов",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": 35.9,
     "kmInc": 65,
     "timeInc": 360,
@@ -244,7 +244,7 @@
   {
     "vendor": "Везуха",
     "tariff": "12 часов",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": 49,
     "kmInc": 90,
     "timeInc": 720,
@@ -255,7 +255,7 @@
   {
     "vendor": "Везуха",
     "tariff": "1 сутки",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": 66,
     "kmInc": 130,
     "timeInc": 1440,
@@ -266,12 +266,56 @@
   {
     "vendor": "Везуха",
     "tariff": "50 часов",
-    "car": "Kia XRio",
+    "car": "Kia Rio X-Line",
     "prepay": 90,
     "kmInc": "",
     "timeInc": 3000,
     "kmOver": 0.21,
     "timeOver": "",
     "id": "c1453e80-f5f7-11eb-9700-df40ac0b5214"
+  },
+  {
+    "vendor": "Везуха",
+    "tariff": "минуты (везунчик)",
+    "car": "Kia Rio X-Line",
+    "prepay": "",
+    "kmInc": "",
+    "timeInc": "",
+    "kmOver": 0.28,
+    "timeOver": 0.13,
+    "id": "62a9cb50-f630-11eb-b49b-83c87d079a86"
+  },
+  {
+    "vendor": "Везуха",
+    "tariff": "минуты (везунчик+)",
+    "car": "Kia Rio X-Line",
+    "prepay": "",
+    "kmInc": "",
+    "timeInc": "",
+    "kmOver": 0.27,
+    "timeOver": 0.11,
+    "id": "78d992c0-f630-11eb-b49b-83c87d079a86"
+  },
+  {
+    "vendor": "Anytime",
+    "tariff": "минуты",
+    "car": "BMW 320",
+    "prepay": "",
+    "kmInc": "",
+    "timeInc": "",
+    "kmOver": "",
+    "timeOver": 0.64,
+    "id": "c2320320-f631-11eb-95f3-c1910d7fbb84"
+  },
+  {
+    "vendor": "Anytime",
+    "tariff": "сутки",
+    "car": "BMW 320",
+    "prepay": 125,
+    "kmInc": 120,
+    "timeInc": 1440,
+    "kmOver": 0.39,
+    "timeOver": 0.3,
+    "id": "1a0a1c40-f632-11eb-95f3-c1910d7fbb84"
   }
 ]
