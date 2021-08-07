@@ -3,21 +3,61 @@ import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import SyncIcon from '@material-ui/icons/Sync';
 import { getList, updateList } from '../../storage/localStorage';
+import { saveAs } from 'save-as';
+import { useContext, useEffect, useState } from 'react';
+import { AlertContext } from '../../components/Alert/context';
 import fixtures from '../../fixtures/planList.json';
 import styles from './SettingsPage.module.css';
-import { saveAs } from 'save-as';
 
 export default function SettingsPage() {
+  const [fileError, setFileError] = useState('');
+  const { setOpen, setMessage, setSeverity } = useContext(AlertContext);
+
   const onFixturesLoad = () => {
     if (window.confirm('удалятся ваши текущие тарифы. Продолжить?')) {
       updateList(fixtures);
+
+      setSeverity('success');
+      setMessage('Тарифы загружены!');
+      setOpen(true);
     }
   };
 
-  const onImport = () => {
-    if (window.confirm('удалятся ваши текущие тарифы. Продолжить?')) {
+  const onChangeInputFile = (e) => {
+    const { files } = e.target;
 
-      updateList(fixtures);
+    if (!files[0]) {
+      setFileError('Файл не выбран');
+      return;
+    }
+
+    if (files[0].size > 5 * 1024 * 1024) {
+      setFileError('Файл должен быть менее 5Мб');
+      return;
+    }
+
+    if (files[0].type !== 'application/json') {
+      setFileError('Выберите файл json');
+      return;
+    }
+
+    if (window.confirm('удалятся ваши текущие тарифы. Продолжить?')) {
+      const fileReader = new FileReader();
+      fileReader.onload = (e) => {
+        try {
+          const planList = JSON.parse(e.target.result);
+          updateList(planList);
+
+          setFileError('');
+          setSeverity('success');
+          setMessage('Данные импортированы успешно!');
+          setOpen(true);
+        } catch (e) {
+          setFileError('Входе импорта возникла ошибка');
+          console.error(e);
+        }
+      };
+      fileReader.readAsText(files[0]);
     }
   };
 
@@ -27,16 +67,35 @@ export default function SettingsPage() {
     saveAs(blob, 'planList.json');
   };
 
+  useEffect(() => {
+    if (!fileError) return;
+    setSeverity('error');
+    setMessage(fileError);
+    setOpen(true);
+  }, [fileError, setSeverity, setMessage, setOpen]);
+
   return (
     <div className={styles.root}>
       <Button
         className={styles.btn}
+        color='secondary'
+        variant='outlined'
+        onClick={onFixturesLoad}
+        startIcon={<SyncIcon />}
+      >
+        Загрузить имеющиеся на сайте тарифы
+      </Button>
+      <Button
+        className={styles.btn}
         color='primary'
         variant='outlined'
-        onClick={onImport}
         startIcon={<CloudUploadIcon />}
       >
-        Импорт из файла
+        {/* fixme: label clickable only */}
+        <label>
+          Импорт из файла
+          <input className={styles.inputFile} type='file' onChange={onChangeInputFile}/>
+        </label>
       </Button>
       <Button
         className={styles.btn}
@@ -46,15 +105,6 @@ export default function SettingsPage() {
         startIcon={<CloudDownloadIcon />}
       >
         Экспорт в файл
-      </Button>
-      <Button
-        className={styles.btn}
-        color='secondary'
-        variant='outlined'
-        onClick={onFixturesLoad}
-        startIcon={<SyncIcon />}
-      >
-        Загрузить имеющиеся на сайте тарифы
       </Button>
     </div>
   );

@@ -7,3 +7,11 @@
 .btn {
     margin-bottom: 12px;
 }
+
+.inputFile {
+    outline:0;
+    opacity:0;
+    pointer-events:none;
+    user-select:none;
+    width: 0;
+}
