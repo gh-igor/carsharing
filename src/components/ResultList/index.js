@@ -22,45 +22,45 @@ const columns = [
     width: 130,
   },
   {
+    field: 'summary',
+    headerName: 'Цена',
+    type: 'number',
+    width: 135,
+  },
+  {
     field: 'car',
     headerName: 'Авто',
     width: 110,
   },
   {
     field: 'prepay',
-    headerName: 'предоплата',
+    headerName: 'Предоплата',
     type: 'number',
     width: 140,
   },
   {
     field: 'kmInc',
-    headerName: 'km inc.',
+    headerName: 'Км вкл',
     type: 'number',
     width: 125,
   },
   {
     field: 'timeInc',
-    headerName: 'time inc.',
+    headerName: 'Время вкл',
     type: 'number',
     width: 130,
   },
   {
     field: 'kmOver',
-    headerName: 'km extra',
+    headerName: 'Км овер',
     type: 'number',
     width: 135,
   },
   {
     field: 'timeOver',
-    headerName: 'time extra',
+    headerName: 'Время овер',
     type: 'number',
     width: 140,
-  },
-  {
-    field: 'summary',
-    headerName: 'summary',
-    type: 'number',
-    width: 135,
   },
 ];
 

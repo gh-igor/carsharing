@@ -84,7 +84,7 @@ export default function PlanForm({ onAddItem }) {
       <TextField
         className={styles.field}
         type='number'
-        label='Предоплата'
+        label='Предоплата, руб.'
         variant='outlined'
         onChange={onChange}
         onBlur={onBlur}
@@ -108,7 +108,7 @@ export default function PlanForm({ onAddItem }) {
       <TextField
         className={styles.field}
         type='number'
-        label='Включено время'
+        label='Включено время, мин'
         variant='outlined'
         onChange={onChange}
         onBlur={onBlur}
@@ -120,7 +120,7 @@ export default function PlanForm({ onAddItem }) {
       <TextField
         className={styles.field}
         type='number'
-        label='Перепробег км'
+        label='Перепробег, руб./км'
         variant='outlined'
         onChange={onChange}
         onBlur={onBlur}
@@ -132,7 +132,7 @@ export default function PlanForm({ onAddItem }) {
       <TextField
         className={styles.field}
         type='number'
-        label='Перепробег время'
+        label='Перепробег время, руб./мин'
         variant='outlined'
         onChange={onChange}
         onBlur={onBlur}
