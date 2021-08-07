@@ -2,6 +2,7 @@ import { Button } from '@material-ui/core';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import SyncIcon from '@material-ui/icons/Sync';
+import { Alert } from '@material-ui/lab';
 import { getList, updateList } from '../../storage/localStorage';
 import { saveAs } from 'save-as';
 import { useContext, useEffect, useState } from 'react';
@@ -76,6 +77,9 @@ export default function SettingsPage() {
 
   return (
     <div className={styles.root}>
+      <Alert className={styles.alert} severity='info'>
+        Разработчиком добавлены большинство известных тарифов трех каршеринговых служб
+      </Alert>
       <Button
         className={styles.btn}
         color='secondary'
@@ -85,6 +89,9 @@ export default function SettingsPage() {
       >
         Загрузить имеющиеся на сайте тарифы
       </Button>
+      <Alert className={styles.alert} severity='success'>
+        Есть возможность импорта/экспорта ваших персональных тарифных планов
+      </Alert>
       <Button
         className={styles.btn}
         color='primary'

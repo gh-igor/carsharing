@@ -15,3 +15,7 @@
     user-select:none;
     width: 0;
 }
+
+.alert {
+    margin-bottom: 12px;
+}
