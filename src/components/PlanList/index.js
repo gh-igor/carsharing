@@ -1,6 +1,7 @@
 import { DataGrid } from '@material-ui/data-grid';
-import { useCallback, useState } from 'react';
+import { useCallback, useContext, useState } from 'react';
 import { Button } from '@material-ui/core';
+import { AlertContext } from '../Alert/context';
 import styles from './PlanList.module.css';
 
 const columns = [
@@ -67,10 +68,13 @@ const columns = [
 
 export default function PlanList({ planList, onUpdateItem, onDeleteItems }) {
   const [selectedIds, setIds] = useState([]);
+  const { setOpen, setSeverity, setMessage } = useContext(AlertContext);
 
   const onCommit = useCallback(({ row, field, value }) => {
     if (!row) {
-      alert('Ошибка сохранения. Перезагрузим страницу?');
+      setSeverity('error');
+      setMessage('Ошибка сохранения. Перезагружаем страницу');
+      setOpen(true);
       window.location.reload();
     }
     onUpdateItem({ ...row, [field]: value }, row.id);
