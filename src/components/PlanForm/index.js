@@ -39,12 +39,12 @@ export default function PlanForm({ onAddItem }) {
     const { name, value, type } = e.target;
     const isString = Number.isNaN(Number(value)) || value === "" || type === "text";
     setFieldValue(name, isString ? value : Number(value));
-  }, []);
+  }, [setFieldValue]);
 
   const onBlur = useCallback((e) => {
     const { name } = e.target;
     setFieldTouched(name);
-  }, []);
+  }, [setFieldTouched]);
 
   return (
     <form onSubmit={handleSubmit} className={styles.root}>

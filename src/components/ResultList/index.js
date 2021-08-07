@@ -65,7 +65,7 @@ const columns = [
 ];
 
 export default function ResultList({ km, min }) {
-  const planList = useMemo(() => getList());
+  const planList = getList();
 
   const rows = useMemo(() => {
     return planList.map((plan) => {

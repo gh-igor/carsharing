@@ -78,11 +78,11 @@ export default function PlanList({ planList, onUpdateItem, onDeleteItems }) {
       window.location.reload();
     }
     onUpdateItem({ ...row, [field]: value }, row.id);
-  }, [planList]);
+  }, [setSeverity, setMessage, setOpen, onUpdateItem]);
 
   const onDelete = useCallback(() => {
     if (window.confirm("agree?")) onDeleteItems(selectedIds);
-  }, [selectedIds]);
+  }, [selectedIds, onDeleteItems]);
 
   return (
     <div className={styles.root}>

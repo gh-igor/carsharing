@@ -16,7 +16,7 @@ export default function PlansPage() {
     setSeverity('success');
     setMessage('Тариф добавлен!');
     setOpen(true);
-  }, [planList]);
+  }, [planList, setSeverity, setMessage, setOpen]);
 
   const updateItem = useCallback((row, id) => {
     const planListUpdated = planList.map(item => item.id === id ? row : item);
@@ -26,7 +26,7 @@ export default function PlansPage() {
     setSeverity('success');
     setMessage('Сохранено');
     setOpen(true);
-  }, [planList]);
+  }, [planList, setSeverity, setMessage, setOpen]);
 
   const deleteItems = useCallback((ids) => {
     const filteredList = planList.filter(item => !ids.includes(item.id));
@@ -36,7 +36,7 @@ export default function PlansPage() {
     setSeverity('success');
     setMessage('Удалено успешно');
     setOpen(true);
-  }, [planList]);
+  }, [planList, setSeverity, setMessage, setOpen]);
 
   return (
     <>
