@@ -12,7 +12,7 @@ export default function MainPage() {
     const { name, value } = e.target;
     setState({
       ...values,
-      [name]: Number(value),
+      [name]: value === "" ? "" : Number(value),
     });
   }, [values]);
 
