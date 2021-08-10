@@ -32,6 +32,8 @@ const columns = [
   {
     field: 'prepay',
     headerName: 'Предоплата',
+    headerAlign: 'left',
+    align: 'center',
     type: 'number',
     width: 160,
     editable: true,
@@ -39,6 +41,8 @@ const columns = [
   {
     field: 'kmInc',
     headerName: 'Км вкл',
+    headerAlign: 'left',
+    align: 'center',
     type: 'number',
     width: 125,
     editable: true,
@@ -46,6 +50,8 @@ const columns = [
   {
     field: 'timeInc',
     headerName: 'Время вкл',
+    headerAlign: 'left',
+    align: 'center',
     type: 'number',
     width: 150,
     editable: true,
@@ -53,6 +59,8 @@ const columns = [
   {
     field: 'kmOver',
     headerName: 'Км овер',
+    headerAlign: 'left',
+    align: 'center',
     type: 'number',
     width: 140,
     editable: true,
@@ -60,6 +68,8 @@ const columns = [
   {
     field: 'timeOver',
     headerName: 'Время овер',
+    headerAlign: 'left',
+    align: 'center',
     type: 'number',
     width: 155,
     editable: true,
