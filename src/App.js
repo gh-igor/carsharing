@@ -17,11 +17,11 @@ import styles from './App.module.css';
 function App() {
   return (
     <StylesProvider injectFirst>
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg' className={styles.container}>
         <AlertContext.Provider value={useAlert()}>
           <Router>
             <Navigation />
-            <div className={styles.root}>
+            <div className={styles.page}>
               <Switch>
                 <Route exact path='/' component={MainPage} />
                 <Route path='/plans' component={PlansPage} />

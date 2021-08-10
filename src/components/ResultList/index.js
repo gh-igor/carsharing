@@ -42,7 +42,7 @@ const columns = [
     headerAlign: 'left',
     align: 'center',
     type: 'number',
-    width: 140,
+    width: 160,
   },
   {
     field: 'kmInc',
@@ -58,7 +58,7 @@ const columns = [
     headerAlign: 'left',
     align: 'center',
     type: 'number',
-    width: 130,
+    width: 150,
   },
   {
     field: 'kmOver',
@@ -74,7 +74,7 @@ const columns = [
     headerAlign: 'left',
     align: 'center',
     type: 'number',
-    width: 140,
+    width: 155,
   },
 ];
 
