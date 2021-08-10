@@ -1,0 +1,15 @@
+.cellIcon {
+    padding-left: 0;
+}
+
+.cellIconContent {
+    display: flex;
+}
+
+.cellIconContent svg {
+    margin-right: 4px;
+}
+
+.miniTableCell {
+    border-bottom: none;
+}

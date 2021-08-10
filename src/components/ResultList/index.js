@@ -1,7 +1,9 @@
 import { DataGrid } from '@material-ui/data-grid';
 import { useMemo } from 'react';
-import styles from './ResultList.module.css';
 import { getList } from '../../storage/localStorage';
+import AdaptiveBlock from '../AdaptiveBlock';
+import MobileTable from './MobileTable';
+import styles from './ResultList.module.css';
 
 
 const columns = [
@@ -98,11 +100,16 @@ export default function ResultList({ km, min }) {
 
   return (
     <div className={styles.root}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        autoPageSize
-      />
+      <AdaptiveBlock devices={['desktop', 'tablet']}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          autoPageSize
+        />
+      </AdaptiveBlock>
+      <AdaptiveBlock devices={['mobile']}>
+        <MobileTable rows={rows} />
+      </AdaptiveBlock>
     </div>
   );
 }
