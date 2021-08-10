@@ -4,6 +4,7 @@
 
 .cellIconContent {
     display: flex;
+    align-items: center;
 }
 
 .cellIconContent svg {
@@ -12,4 +13,11 @@
 
 .miniTableCell {
     border-bottom: none;
+}
+
+.collapsibleCell {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: linear-gradient(0, #fff 0%, #fdfdfd 100%);
 }

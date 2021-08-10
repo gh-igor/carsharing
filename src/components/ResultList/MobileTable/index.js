@@ -27,7 +27,7 @@ function Row({ row }) {
         <TableCell>{row.summary.toFixed(2)}</TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={3}>
+        <TableCell className={styles.collapsibleCell} colSpan={3}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box margin={1}>
               <Table size="small">
