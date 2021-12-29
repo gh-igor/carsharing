@@ -658,5 +658,137 @@
     "kmOver": 0.27,
     "timeOver": "",
     "id": "a0191d10-279a-11ec-872a-e7d15ebf0a9f"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "минуты",
+    "car": "chevrolet cobalt",
+    "prepay": "",
+    "kmInc": "",
+    "timeInc": "",
+    "kmOver": "",
+    "timeOver": 0.35,
+    "id": "a4a8e5d0-68be-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "30 мин",
+    "car": "chevrolet cobalt",
+    "prepay": 3.9,
+    "kmInc": "",
+    "timeInc": 30,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "bea40d20-68be-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "1 час",
+    "car": "chevrolet cobalt",
+    "prepay": 6.9,
+    "kmInc": "",
+    "timeInc": 60,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "de5dd8d0-68be-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "2 часа",
+    "car": "chevrolet cobalt",
+    "prepay": 12.9,
+    "kmInc": "",
+    "timeInc": 120,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "065b1f00-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "3 часа",
+    "car": "chevrolet cobalt",
+    "prepay": 22,
+    "kmInc": 35,
+    "timeInc": 180,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "1fbe7320-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "4 часа",
+    "car": "chevrolet cobalt",
+    "prepay": 29,
+    "kmInc": 45,
+    "timeInc": 240,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "3034c650-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "6 часов",
+    "car": "chevrolet cobalt",
+    "prepay": 32,
+    "kmInc": 55,
+    "timeInc": 360,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "40572d20-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "9 часов",
+    "car": "chevrolet cobalt",
+    "prepay": 39,
+    "kmInc": 70,
+    "timeInc": 540,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "4ef62840-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "12 часов",
+    "car": "chevrolet cobalt",
+    "prepay": 47,
+    "kmInc": 85,
+    "timeInc": 120,
+    "kmOver": 0.29,
+    "timeOver": "",
+    "id": "64b8fd10-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "1 сутки",
+    "car": "chevrolet cobalt",
+    "prepay": 39,
+    "kmInc": "",
+    "timeInc": 1440,
+    "kmOver": 0.27,
+    "timeOver": "",
+    "id": "8065a4f0-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "2 суток",
+    "car": "chevrolet cobalt",
+    "prepay": 76,
+    "kmInc": "",
+    "timeInc": 2880,
+    "kmOver": 0.27,
+    "timeOver": "",
+    "id": "93b72ba0-68bf-11ec-a1e7-0dc581578784"
+  },
+  {
+    "vendor": "multimotors",
+    "tariff": "минуты ночь",
+    "car": "chevrolet cobalt",
+    "prepay": "",
+    "kmInc": "",
+    "timeInc": "",
+    "kmOver": "",
+    "timeOver": 0.3,
+    "id": "b28c63b0-68bf-11ec-a1e7-0dc581578784"
   }
 ]
